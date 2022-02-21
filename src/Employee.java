@@ -1,9 +1,19 @@
-public class Employee extends Human{
+/*
+Class Employee extends Human
+- String employeeId
+- String jobname;
+- Int salary
+Constructor default+param
+override void printData()
+Getter/setter
+ */
+
+public class Employee extends Human {
     private String employeeId;
     private String jobName;
     private int salary;
 
-    public Employee(){}
+    public Employee (){}
     public Employee(String name, int age, String employeeId, String jobName, int salary){
         super(name, age);
         this.employeeId = employeeId;
@@ -12,7 +22,7 @@ public class Employee extends Human{
     }
 
     public String getEmployeeId(){
-        return employeeId;
+        return  employeeId;
     }
 
     public String getJobName(){
@@ -37,6 +47,6 @@ public class Employee extends Human{
 
     @Override
     public void printData(){
-        System.out.println(getName()+" "+getAge()+" "+getEmployeeId()+" "+getJobName()+" "+getSalary());
+        System.out.println(getName()+" "+getAge()+" "+employeeId+" "+jobName+" "+salary);
     }
 }

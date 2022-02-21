@@ -1,14 +1,23 @@
+/*
+Abstract Class Human
+-String name
+-int age
+Getter/setter
+Constructor default+param
+Abstract void printData()
+ */
+
 public abstract class Human {
     private String name;
     private int age;
 
-    public Human(){}
-    public Human(String name, int age){
+    public Human (){}
+    public Human (String name, int age){
         this.name = name;
         this.age = age;
     }
 
-    public String getName (){
+    public String getName(){
         return name;
     }
 
